@@ -1,7 +1,13 @@
-div {
-  color: red;
-}
+@import './abstracts/functions';
+@import './abstracts/mixins';
+@import './abstracts/variables';
 
-p {
-  border: 1px solid black;
-}
+@import './base/animations';
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/home';
