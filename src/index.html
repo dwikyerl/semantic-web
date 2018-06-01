@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Semantic Web</title>
+  <title>Home | Dwikyerl</title>
   <link rel="stylesheet" href="
   <%= htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
+
 <body>
-  <div>Hello, world!</div>
+  <div class="navigation">
+    <div class="navigation__logo">
+      Dwikyerl
+    </div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">Home</li>
+        <li class="navigation__item">Projects</li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <h1 class="hero__text-box">
+      <span class="heading-primary--main">Dwiky Erlangga</span>
+      <span class="heading-primary--sub">Fullstack Web Developer</span>
+    </h1>
+  </header>
+
+  <main>
+    <section class="section-about">
+      <h2 class="heading-secondary">About Me</h2>
+      <div class="profile">
+        <img class="profile__image" src="" alt="Dwiky Erlangga">
+        <p class="paragraph profile__description">
+          My name is Dwiky Erlangga. I am a Fullstack Web Developer. Currently based in Tangerang, Indonesia. My skills include front-end
+          development such as HTML, CSS, DOM Javascript, JQuery, React, SASS and back-end development using Node JS with
+          express framework, PostgreSQL, MongoDB, Sequelize ORM, Mongoose ODM. Now I'm a Fullstack Javascript student at
+          Hacktiv8 Coding Bootcamp, so there is so much for me to learn to become a professional fullstack web developer.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-projects">
+      <div class="project">
+        <img src="" alt="Color Game" class="project__image">
+        <p class="paragraph project_description">
+          Color Game
+        </p>
+        <a class="project_link" href="https://dwikyerl.github.io/color-game/">View Project</a>
+        <a class="project_link" href="https://github.com/dwikyerl/color-game">Project's Repo</a>
+      </div>
+    </section>
+
+    <section class="section-contacts">
+      <h2 class="heading-secondary">Keep in touch with me</h2>
+      <p class="paragraph"></p>
+    </section>
+
+
+    <footer class="section-footer">
+      <h2 class="footer__copyright">Copyright &copy; 2018 by Dwiky Erlangga</h2>
+    </footer>
+  </main>
+
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
+
 </html>
