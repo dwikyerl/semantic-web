@@ -1,13 +1,20 @@
-@import './abstracts/functions';
-@import './abstracts/mixins';
-@import './abstracts/variables';
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
 
-@import './base/animations';
-@import './base/base';
-@import './base/typography';
-@import './base/utilities';
+@import "./base/animations";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
 
-@import './layout/header';
-@import './layout/footer';
+@import "./components/button";
+@import "./components/hero";
+@import "./components/navigation";
+@import "./components/profile";
+@import "./components/projects";
+@import "./components/social";
 
-@import './pages/home';
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/home";

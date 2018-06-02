@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+
+  &__copyright {
+    font-size: 2rem;
+    color: $color-white;
+  }
+}

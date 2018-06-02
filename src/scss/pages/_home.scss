@@ -1,0 +1,34 @@
+.section-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.section-about {
+  padding-top: 2rem;
+}
+
+.section-projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 10rem 0 20rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: 10rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-contacts {
+  padding: 10rem 0;
+}

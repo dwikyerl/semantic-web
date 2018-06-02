@@ -27,6 +27,19 @@ const scss = {
   use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
 };
 
+const images = {
+  test: /\.(png|jp(e*)g|svg|ico)$/,
+  use: [
+    {
+      loader: 'url-loader',
+      options: {
+        limit: 8000, // Convert images < 8kb to base64 strings
+        name: 'images/[hash]-[name].[ext]',
+      },
+    },
+  ],
+};
+
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
@@ -34,7 +47,7 @@ module.exports = {
     filename: '[name].[chunkhash].js',
   },
   module: {
-    rules: [javascript, eslint, scss],
+    rules: [javascript, eslint, scss, images],
   },
   plugins: [
     // new ExtractTextPlugin({
