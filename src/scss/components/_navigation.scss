@@ -12,6 +12,10 @@
   z-index: 10;
   animation: fadeIn 1.5s ease-out;
 
+  @include respond(tab-port) {
+    flex-flow: column nowrap;
+  }
+
   &__logo {
     font-size: 3rem;
     font-weight: 300;
