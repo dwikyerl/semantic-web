@@ -27,6 +27,12 @@
     transform: skewY(7deg);
   }
 
+  h2 {
+    &:hover {
+      transform: scale(1.2) skewY(7deg);
+    }
+  }
+
   &__list {
     width: 100%;
     display: flex;
