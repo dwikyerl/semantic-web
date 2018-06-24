@@ -58,8 +58,28 @@
     </section>
 
     <section class="section-projects" id="projects">
-      <div class="section-container">
-        <h2 class="heading-secondary heading-secondary--white">Projects</h2>
+      <h2 class="heading-secondary heading-secondary--white">Projects</h2>
+      <div class="section-projects__list">
+        <div class="project">
+          <figure class="project__shape">
+            <img src="<%= require('./images/color-game.png') %>" alt="Color Game" class="project__image">
+            <figcaption class="project__caption">
+              <span class="project__caption--primary">Color Game</span>
+              <span class="project__caption--secondary">This is a web based game built to learn RGB Colors</span>
+            </figcaption>
+          </figure>
+          <div class="project__details">
+            <ul>
+              <li>HTML</li>
+              <li>SASS</li>
+              <li>DOM Javascript</li>
+              <li>Webpack</li>
+            </ul>
+          </div>
+          <a class="btn btn--green btn--small" target="_blank" href="https://dwikyerl.github.io/color-game/">View Project</a>
+          <a class="btn btn--green btn--small" target="_blank" href="https://github.com/dwikyerl/color-game">Project's Repo</a>
+        </div>
+
         <div class="project">
           <figure class="project__shape">
             <img src="<%= require('./images/color-game.png') %>" alt="Color Game" class="project__image">

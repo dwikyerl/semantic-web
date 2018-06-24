@@ -12,6 +12,12 @@
   border-radius: 5px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   padding-bottom: 2rem;
+  margin-right: 3rem;
+
+  @include respond(tab-port) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 
   &__shape {
     position: relative;

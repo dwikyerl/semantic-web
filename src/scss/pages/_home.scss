@@ -12,8 +12,7 @@
 
 .section-projects {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column nowrap;
   padding: 10rem 0 20rem;
   background-image: linear-gradient(
     to right bottom,
@@ -26,6 +25,18 @@
 
   & > * {
     transform: skewY(7deg);
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      flex-flow: column nowrap;
+    }
   }
 }
 
